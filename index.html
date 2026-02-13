@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Maji | Full-Stack Developer Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Shubham Maji<span class="dot">.</span></a>
+
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open menu"
+                aria-controls="nav-menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#work" class="nav__link" onclick="closeMenu()">Work</a></li>
+                    <li><a href="#services" class="nav__link" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#contact" class="nav__link btn-nav" onclick="closeMenu()">Let's Talk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main data-scroll-container>
+        <section class="hero" data-scroll-section>
+            <div class="hero__bg-lines"></div>
+
+            <div class="container hero__container">
+
+                <div class="hero__top-bar">
+                    <p class="hero__greeting">Welcome!<br><span class="highlight">Hey, I'm Shubham Maji</span></p>
+
+                    <div class="hero__status">
+                        <span class="status-dot"></span>
+                        Available for new work
+                    </div>
+                </div>
+
+                <h1 class="hero__title">
+                    Building Scalable <br>
+                    Web Apps & Immersive <br>
+                    3D Experiences
+                </h1>
+
+                <div class="hero__content-row">
+                    <p class="hero__desc">
+                        Graduate Engineer & Full-Stack Developer with a passion for React, Next.js, and Three.js.
+                        I turn complex problems into robust, visually stunning web solutions.
+                    </p>
+                </div>
+
+                <div class="hero__actions">
+                    <a href="#" class="btn-hero">
+                        Book a Call
+                        <span class="arrow">&rarr;</span>
+                    </a>
+                    <p class="hero__email">Email: <a href="mailto:hello@shubham.com">hello@shubham.com</a></p>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__num">1+</span>
+                        <span class="stat__label">Years Exp.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">5+</span>
+                        <span class="stat__label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__num">React</span>
+                        <span class="stat__label">Specialist</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="work" class="projects" data-scroll-section>
+            <div class="container">
+                <h2 class="section-title">Selected Projects</h2>
+
+                <div class="project-grid">
+                    <a href="https:freelancing-duo.vercel.app" class="project-card" target="_blank">
+                        <div class="project-card__image">
+                            <div class="placeholder-img">
+                                <img src="./public/project_1.jpeg" alt="FreelanceDuo Project">
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>FreelanceDuo</h3>
+                            <p>A comprehensive freelancer marketplace platform.</p>
+                            <div class="tags">
+                                <span>React</span><span>Node.js</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://ai-study-room-phi.vercel.app" class="project-card" target="_blank">
+                        <div class="project-card__image">
+                            <div class="placeholder-img">
+                                <img src="./public/project_2.jpeg" alt="Ai-Study Room Project">
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Ai-Study Room</h3>
+                            <p>Real-time collaborative application.</p>
+                            <div class="tags">
+                                <span>React.js</span><span>Canvas</span><span>AI</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://your-live-link-here.com" class="project-card" target="_blank">
+                        <div class="project-card__image">
+                            <div class="placeholder-img">
+                                <img src="./public/chess.jpg" alt="3D Chess Game">
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>3D Chess Game</h3>
+                            <p>Interactive 3D gaming experience for the web.</p>
+                            <div class="tags">
+                                <span>Three.js</span><span>GSAP</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="center-btn">
+                    <a href="#" class="btn-text">View All Projects &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services" data-scroll-section>
+            <div class="container services__container">
+                <div class="services__list-wrapper">
+                    <h2 class="section-title">Services</h2>
+                    <ul class="services__list">
+                        <li class="service-item active">
+                            <span class="service-num">01</span>
+                            <h3>Full-Stack Development</h3>
+                            <p>End-to-end web apps using MERN stack & Next.js.</p>
+                        </li>
+                        <li class="service-item">
+                            <span class="service-num">02</span>
+                            <h3>3D Web Experiences</h3>
+                            <p>Interactive visuals with Three.js & React Fiber.</p>
+                        </li>
+                        <li class="service-item">
+                            <span class="service-num">03</span>
+                            <h3>UI/UX Implementation</h3>
+                            <p>Pixel-perfect responsive layouts from designs.</p>
+                        </li>
+                        <li class="service-item">
+                            <span class="service-num">04</span>
+                            <h3>Performance Optimization</h3>
+                            <p>Making web apps faster and more accessible.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="services__image">
+                    <div class="placeholder-img"
+                        style="background-color: #222; display: flex; align-items: center; justify-content: center; color: #555;">
+                        <img src="./public/workspace.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" data-scroll-section>
+            <div class="container">
+                <h2 class="section-title">Client Feedback</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p>"Shubham is a rare expert in both design and development. The results speak for
+                            themselves—clean, functional, and visually stunning."</p>
+                        <div class="client">
+                            <div class="client-avatar">
+                                <img src="./public/man.png" alt="Client 1" class="avatar-small">
+                            </div>
+                            <div class="client-info">
+                                <h4>ABC</h4>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"The dashboard Shubham built for us was exactly what we needed to take our analytics to the
+                            next level."</p>
+                        <div class="client">
+                            <div class="client-avatar">
+                                <img src="./public/boy.png" alt="Client 1" class="avatar-small">
+                            </div>
+                            <div class="client-info">
+                                <h4>ABC</h4>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Incredible work on the freelance platform. The code was clean, responsive, and delivered on
+                            time."</p>
+                        <div class="client">
+                            <div class="client-avatar">
+                                <img src="./public/woman.png" alt="Client 1" class="avatar-small">
+                            </div>
+                            <div class="client-info">
+                                <h4>ABC</h4>
+                                <span>Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="footer" data-scroll-section>
+            <div class="container footer__container">
+                <div class="footer__cta">
+                    <h2>Let's Create Something Amazing Together!</h2>
+
+                    <div class="contact-info">
+                        <h3>Book a quick call</h3>
+                        <p>Select a time on my calendar to discuss your project.</p>
+                        <a href="#" class="btn btn--outline">Book a call &rarr;</a>
+                    </div>
+                </div>
+
+                <form class="footer__form">
+                    <h3>Send a message</h3>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell me about your project"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--white">Submit</button>
+                </form>
+            </div>
+
+            <div class="container footer__bottom">
+                <div class="footer__logo">
+                    <img src="./public/image.png" alt="Shubham" class="avatar-small">
+                    <span>Shubham Maji</span>
+                </div>
+                <div class="footer__links">
+                    <a href="https://www.linkedin.com/in/shubham-maji">LinkedIn</a>
+                    <a href="https://github.com/shubhammaji1">GitHub</a>
+                </div>
+                <p class="copyright">&copy; 2026 Shubham Maji. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

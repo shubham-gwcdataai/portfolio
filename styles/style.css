@@ -1,0 +1,130 @@
+@import url('../components/navbar/navbar.css');
+@import url('../components/hero/hero.css');
+@import url('../components/projects/projects.css');
+@import url('../components/services/services.css');
+@import url('../components/testimonials/testimonials.css');
+@import url('../components/footer/footer.css');
+
+:root {
+    --bg: #0b0b0c;
+    --panel: rgba(255, 255, 255, 0.06);
+    --card: rgba(255, 255, 255, 0.04);
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.62);
+    --border: rgba(255, 255, 255, 0.10);
+    --shadow: 0 18px 55px rgba(0, 0, 0, 0.55);
+    --radius-lg: 18px;
+    --radius-md: 14px;
+    --container: 1120px;
+    --font: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(1100px 700px at 18% 12%, rgba(255, 255, 255, 0.06), transparent 60%),
+        radial-gradient(900px 600px at 84% 16%, rgba(74, 222, 128, 0.08), transparent 55%),
+        var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    margin-bottom: 24px;
+    display: block;
+}
+
+.dot {
+    color: #4ade80;
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: 650;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.95);
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.22);
+}
+
+.btn--white {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(255, 255, 255, 0.92);
+    color: rgba(0, 0, 0, 0.92);
+}
+
+.btn--white:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.btn--outline {
+    background: transparent;
+}
+
+
+.placeholder-img {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    border-radius: 12px;
+    background: #1b1b1e;
+    overflow: hidden;
+}
+
+.placeholder-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
